@@ -1,24 +1,32 @@
-# README
+# PescadoHRIS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pescado Human Resources Management system
 
-Things you may want to cover:
+Holding User Account information
+Allows editing by user
+Administration system
+Training information
+Appraisal document upload
+Annual leave booking system
+Company Policy Directory
+HR Application by email submission
+Make an Admin
+Delete users
+Authentication and login persistence
 
-* Ruby version
+Database is held in three major parts. First is the user for basic user information, second is annual leave bookings, the third is training information.
 
-* System dependencies
+front-end is primarily nav based with forms and clickables. Some javascript in place for visual enhancement but kept to a minimum to ensure functionality is light, fast and easy to use.
 
-* Configuration
+Full Stack demonstrated in the following technology;
 
-* Database creation
+  ruby
+  rails
+  Phusion passenger
+  HTML
+  CSS - Boostrap
+  SaSS
+  javascript
+  hosted on github
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployment is internal and over VPN, non-internet based.
