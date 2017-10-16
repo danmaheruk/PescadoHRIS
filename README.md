@@ -2,19 +2,19 @@
 
 Pescado Human Resources Management system
 
-<li>
-Holding User Account information
-Allows editing by user
-Administration system
-Training information
-Appraisal document upload
-Annual leave booking system
-Company Policy Directory
-HR Application by email submission
-Make an Admin
-Delete users
-Authentication and login persistence
-</li>
+<ul>
+<li> Holding User Account information</li>
+<li>Administration system</li>
+<li>Allows editing by user</li>
+<li>Training information</li>
+<li>Appraisal document upload</li>
+<li>Annual leave booking system</li>
+<li>Company Policy Directory</li>
+<li>HR Application by email submission</li>
+<li>Make an Admin</li>
+<li>Delete users</li>
+<li>Authentication and login persistence</li>
+</ul>
 
 Database is held in three major parts. First is the user for basic user information, second is annual leave bookings, the third is training information.
 
