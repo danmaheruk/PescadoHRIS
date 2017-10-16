@@ -2,6 +2,7 @@
 
 Pescado Human Resources Management system
 
+<li>
 Holding User Account information
 Allows editing by user
 Administration system
@@ -13,6 +14,7 @@ HR Application by email submission
 Make an Admin
 Delete users
 Authentication and login persistence
+</li>
 
 Database is held in three major parts. First is the user for basic user information, second is annual leave bookings, the third is training information.
 
@@ -20,6 +22,7 @@ front-end is primarily nav based with forms and clickables. Some javascript in p
 
 Full Stack demonstrated in the following technology;
 
+<ul>
   ruby
   rails
   Phusion passenger
@@ -28,5 +31,6 @@ Full Stack demonstrated in the following technology;
   SaSS
   javascript
   hosted on github
+  </ul>
 
 Deployment is internal and over VPN, non-internet based.
