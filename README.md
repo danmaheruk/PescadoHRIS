@@ -23,14 +23,14 @@ front-end is primarily nav based with forms and clickables. Some javascript in p
 Full Stack demonstrated in the following technology;
 
 <ul>
-  ruby
-  rails
-  Phusion passenger
-  HTML
-  CSS - Boostrap
-  SaSS
-  javascript
-  hosted on github
+  <li>ruby</li>
+  <li>rails</li>
+  <li>Phusion passenger</li>
+  <li>HTML</li>
+  <li>CSS - Boostrap</li>
+  <li>SaSS</li>
+  <li>Javascript</li>
+  <li>hosted on github</li>
   </ul>
 
 Deployment is internal and over VPN, non-internet based.
