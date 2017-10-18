@@ -1,0 +1,24 @@
+<% provide(:title, 'Login') %>
+<html>
+<h1>Login</h1>
+
+<div class="container-fluid">
+  <div class="col-md-6">
+      <h1>System Secure Access</h1>
+
+      <%= form_for(:session, url: login_path) do |f| %>
+
+
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
+
+          <%= f.submit "Login", class: "btn btn-warning" %>
+      <% end %>
+
+<p>New User?, click <%= link_to "help", help_path %>, contact People Services for system access</p>
+  </div>
+</div>
+</html>

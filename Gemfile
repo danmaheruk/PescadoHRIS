@@ -29,6 +29,7 @@ gem 'jbuilder'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
  gem 'bcrypt'
+ gem 'jquery-rails'
  gem 'will_paginate'
  gem 'bootstrap-will_paginate'
  gem 'devise'
