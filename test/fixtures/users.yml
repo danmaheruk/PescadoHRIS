@@ -4,3 +4,10 @@ Jack:
   name: Jack Horner
   email: jack.horner@pescado.co.uk
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+Archer:
+  name: Sterling Archer
+  email: sterling.archer@example.gov
+  password_digest: <%= User.digest('password') %>
+  admin: true

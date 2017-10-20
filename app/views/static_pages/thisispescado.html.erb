@@ -1,0 +1,21 @@
+<% provide(:title, "Pescado") %>
+<script>
+$(document).ready(function(){$("body").hide().fadeIn(1000);});
+</script>
+
+<h1>This is Pescado</h1>
+
+<div class="container-fluid">
+  <div class="row">
+              <div class="col-md-3">
+                <div class="well">
+                <div class="btn btn-warning btn-block"><%= link_to 'Organisation Structure', :action => :orgstr %></div>
+                <div class="btn btn-warning btn-block"><%= link_to 'Strategy 2016', :action => :strat16 %></div>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+                  <img src="/assets/Pescado org chart.pdf" alt="Structure" width="780" height="650">
+              </div>
+  </div>
+</div>

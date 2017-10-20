@@ -1,0 +1,38 @@
+<% provide(:title, "Pescado Processes") %>
+<script>
+$(document).ready(function(){$("body").hide().fadeIn(1000);});
+</script>
+
+<h1>Pescado Processes</h1>
+
+<div class="jumbotron">
+<div class="container-fluid">
+  <div class="row">
+
+
+
+            <div class="col-md-4">
+            <div class="btn btn-warning btn-block"><%= link_to 'Accomodation Policy', :action => :accompol %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Car Policy', :action => :carpol %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Employee Handbook', :action => :devilscomic %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Confidentiality', :action => :confpol %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Equal Opportunity', :action => :equalopp %></div>
+            </div>
+
+              <div class="col-md-4">
+              <div class="btn btn-warning btn-block"><%= link_to 'Shared Leave', :action => :parentals %></div>
+              <div class="btn btn-warning btn-block"><%= link_to 'Probation Review', :action => :probrev %></div>
+              <div class="btn btn-warning btn-block"><%= link_to 'Paternity Policy', :action => :patpol %></div>
+              <div class="btn btn-warning btn-block"><%= link_to 'Additional Holiday', :action => :addhols %></div>
+              <div class="btn btn-warning btn-block"><%= link_to 'H&S Policy', :action => :healthsaf %></div>
+              </div>
+
+            <div class="col-md-4">
+            <div class="btn btn-warning btn-block"><%= link_to 'Parental Leave Policy', :action => :parental %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Maternity Policy', :action => :matpol %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Staff DPA', :action => :staffdatpol %></div>
+            <div class="btn btn-warning btn-block"><%= link_to 'Eye Tests', :action => :eyetests %></div>
+            </div>
+        </div>
+    </div>
+</div>

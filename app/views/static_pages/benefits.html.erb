@@ -1,0 +1,26 @@
+<% provide(:title, "Benefits") %>
+<script>
+$(document).ready(function(){$("body").hide().fadeIn(1000);});
+</script>
+
+<h1>Pescado Benefits and Discounts</h1>
+
+<div class="jumbotron">
+  <div class="container-fluid">
+
+  <div class="row">
+    <div class="col-md-4">
+    <div class="btn btn-warning btn-block"><%= link_to 'LG VIP Pricing', :action => :lgvip %></div>
+    <div class="btn btn-warning btn-block"><%= link_to 'Discounts', :action => :discounts %></div>
+    </div>
+
+    <div class="col-md-8">
+      <img src="/assets/PescadoStaffBenefits.jpg" alt="Benefits" width="550" height="650">
+    </div>
+
+
+
+
+  </div> <!-- container-fluid -->
+</div> <!-- jumbotron -->
+</div>
