@@ -1,0 +1,69 @@
+<% provide(:title, 'Training') %>
+<!DOCTYPE html>
+<script>
+$(document).ready(function(){$("body").hide().fadeIn(2000);});
+</script>
+
+
+<h1>The <%= current_user.name %> Training Profile</h1>
+
+<div class="container-fluid">
+<div class="well">
+          <div class="row"> <!-- Column Titles -->
+            <div class=col-md-3><h2>Basic Training</h2></div>
+            <div class=col-md-3><h2>Role Specific</h2></div>
+            <div class=col-md-6><h2>Specialism</h2></div>
+          </div>
+
+  <div class="row">
+  <%= form_for(@training) do |f| %>
+  <%= render 'shared/error_messages' %>
+<!-- BASIC -->
+<p>
+          <div class="col-md-3">
+            <%= f.label :induction, "Induction Training" %>
+            <%= f.check_box :induction, class: "form-control" %><br>
+
+            <%= f.label :hstrain, "Health & Safety" %>
+            <%= f.check_box :hstrain, class: "form-control" %><br>
+
+            <%= f.label :lhtrain, "Lifting and Handling" %>
+            <%= f.check_box :lhtrain, class: "form-control" %><br>
+            </div>
+<p>
+<!-- Role Specific -->
+<div class="col-md-3">
+  <%= f.label :vodatotal, "Vodafone Total Comms" %>
+  <%= f.check_box :vodatotal, class: "form-control" %><br>
+
+      <%= f.label :commtrainops, "Connectivity Deliver Ops" %>
+      <%= f.check_box :commtrainops, class: "form-control" %><br>
+
+          <%= f.label :commtrainsell, "Connectivity Sales" %>
+          <%= f.check_box :commtrainsell, class: "form-control" %><br>
+
+              <%= f.label :hosttrainops, "Hosted Deliver Ops" %>
+              <%= f.check_box :hosttrainops, class: "form-control" %><br>
+
+                  <%= f.label :hosttrainsell, "Hosted Sales" %>
+                  <%= f.check_box :hosttrainsell, class: "form-control" %><br>
+
+                      <%= f.label :cpstrainops, "CPS Deliver Ops" %>
+                      <%= f.check_box :cpstrainops, class: "form-control" %><br>
+
+                          <%= f.label :cpstsell, "CPS Sales" %>
+                          <%= f.check_box :cpstsell, class: "form-control" %><br>
+</div>
+  <!-- Specialism -->
+<div class="col-md-6">
+
+  <%= f.label :specialism, "Specialist Courses" %>
+  <%= f.text_area :specialism, cols: "30", rows: "18" %>
+<p>
+  <%= f.submit "Save Changes", class: 'btn btn-warning' %>
+  <% end %>
+
+</div>
+</div>
+</div>
+<h1>My Training & Appraisals</h1>

@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
+
   # Static routes
-  get 'sessions/new'
+  get '/sessions/new'
   get '/static_pages/home'
   get '/static_pages/help'
   get '/users/new'
@@ -19,9 +20,16 @@ Rails.application.routes.draw do
   get '/static_pages/processes'
   get '/static_pages/applications'
   get '/static_pages/benefits'
+  get '/users/admin'
+  get '/users/admins'
+  get '/users/show'
+  get '/users/index'
+
+
 
  # Resources
   resources :users
+  resources :account_activations, only: [:edit]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # routes for downloads DONT TOUCH
   get '/static_pages/holidayreq'

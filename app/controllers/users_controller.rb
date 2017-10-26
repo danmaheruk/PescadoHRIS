@@ -18,8 +18,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = "User connected to system!"
+      @user.send_activation_email
+      flash[:success] = "User connected to system! Check email"
       redirect_to @user
     else
       render 'new'
@@ -46,6 +46,27 @@ class UsersController < ApplicationController
    redirect_to users_url
  end
 
+ def admin
+   @users = User.paginate(page: params[:page], :per_page => 5)
+ end
+
+ def admins
+   @users = User.where(:admin => true)
+ end
+
+ def make_admin
+   @user = User.find(params[:id])
+   @user.update_attributes(:admin => true)
+   flash[:success] = "This user is now an Administrator"
+   redirect_to admin_url
+ end
+
+ def revoke_admin
+   @user = User.find(params[:id])
+   @user.update_attributes(:admin => false)
+   flash[:success] = "Admin Level Revoked"
+   redirect_to admin_url
+ end
 
 private
 

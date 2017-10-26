@@ -5,9 +5,13 @@ Jack:
   email: jack.horner@pescado.co.uk
   password_digest: <%= User.digest('password') %>
   admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 Archer:
   name: Sterling Archer
   email: sterling.archer@example.gov
   password_digest: <%= User.digest('password') %>
   admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
