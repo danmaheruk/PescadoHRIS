@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171023161303) do
+ActiveRecord::Schema.define(version: 20171026155839) do
 
   create_table "trainings", force: :cascade do |t|
     t.boolean "hstrain"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 20171023161303) do
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
+    t.string "reset_digest"
+    t.time "reset_sent_at"
   end
 
 end
