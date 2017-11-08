@@ -8,11 +8,12 @@ Rails.application.routes.draw do
 # Soft named routed paths
   get '/help', to: 'static_pages#help'
   get '/signup', to: 'users#new'
+  get '/user_path', to: 'users#show'
   post '/signup', to: 'users#create'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-
+  get '/reset', to: 'password_reset#new'
 
   # Static routes
   get '/sessions/new'
