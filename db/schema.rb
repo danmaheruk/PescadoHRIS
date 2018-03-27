@@ -12,27 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20171026155839) do
 
-  create_table "trainings", force: :cascade do |t|
-    t.boolean "hstrain"
-    t.boolean "induction"
-    t.boolean "lhtrain"
-    t.boolean "vodatotal"
-    t.boolean "commtrainops"
-    t.boolean "commtrainsell"
-    t.boolean "hosttrainops"
-    t.boolean "hosttrainsell"
-    t.boolean "cpstrainops"
-    t.boolean "cpstops"
-    t.boolean "cpstsell"
-    t.text "specialism"
-    t.string "image_file_name"
-    t.string "image_content_type"
-    t.integer "image_file_size"
-    t.datetime "image_updated_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -45,7 +24,7 @@ ActiveRecord::Schema.define(version: 20171026155839) do
     t.boolean "activated", default: false
     t.datetime "activated_at"
     t.string "reset_digest"
-    t.time "reset_sent_at"
+    t.datetime "reset_sent_at"
   end
 
 end

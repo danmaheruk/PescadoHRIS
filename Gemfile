@@ -32,7 +32,6 @@ gem 'jbuilder'
  gem 'jquery'
  gem 'jquery-rails'
  gem 'will_paginate'
- gem 'bootstrap-will_paginate'
  gem 'devise'
  gem 'guard'
  gem 'minitest'
@@ -41,6 +40,8 @@ gem 'jbuilder'
  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
  gem 'faker'
  gem 'bootstrap-will_paginate'
+ gem 'ruby'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
