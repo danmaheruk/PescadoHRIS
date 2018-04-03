@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/static_pages/processes'
   get '/static_pages/applications'
   get '/static_pages/benefits'
+  get '/static_pages/pension'
   get '/users/admin'
   get '/users/admins'
   get '/users/show'
