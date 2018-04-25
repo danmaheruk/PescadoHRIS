@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+
+<%= form_for(@info) do |f| %>
+
+  <%= render 'shared/error_messages', object: @info %>
+
+<div class="container-fluid">
+					<div class="col-md-3">
+					  <%= f.label :employeeno, "Employee Number" %>
+					  <%= f.text_field :employeeno, class: 'form-control' %>
+
+					  <%= f.label :address, "Home Address" %>
+					  <%= f.text_area :address, class: 'form-control' %>
+
+					  <%= f.label :contact, "Home Phone Number" %>
+					  <%= f.text_field :contact, class: 'form-control' %>
+
+					  <%= f.label :nextofkin, "Emergency Contact" %>
+					  <%= f.text_field :nextofkin, class: 'form-control' %>
+
+					  <%= f.label :kinnumber, "Emergency Number" %>
+					  <%= f.text_field :kinnumber, class: 'form-control' %>
+					</div>
+
+					<div class="col-md-3">
+					  <%= f.label :ninumber, "NI Number" %>
+					  <%= f.text_field :ninumber, class: 'form-control' %>
+
+					  <%= f.label :carman, "Car Make" %>
+					  <%= f.text_field :carman, class: 'form-control' %>
+
+					  <%= f.label :carmodel, "Car Model" %>
+					  <%= f.text_field :carmodel, class: 'form-control' %>
+
+					  <%= f.label :licencep, "Car Reg" %>
+					  <%= f.text_field :licencep, class: 'form-control' %>
+
+					  <%= f.label :adaptions, "Any workplace adaptions" %>
+					  <%= f.text_area :adaptions, class: 'form-control' %>
+					</div>
+
+
+						
+</div>
+						<div class="col-md-2">
+						
+						<%= f.submit "Update", class: "btn btn-warning pull-right" %>
+						</div>
+
+<% end %>
+<br>
+<br>
+</html>

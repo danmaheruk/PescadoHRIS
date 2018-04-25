@@ -39,6 +39,8 @@ gem 'jbuilder'
  gem 'faker'
  gem 'bootstrap-will_paginate'
  gem 'nokogiri'
+ gem 'carrierwave'
+ gem 'mini_magick'
 
 
 
