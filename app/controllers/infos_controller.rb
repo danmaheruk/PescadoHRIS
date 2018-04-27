@@ -8,12 +8,14 @@ class InfosController < ApplicationController
       flash[:success] = "Info Update!"
       redirect_to root_url
     else
-      render 'static_pages/home'
+      render user
     end
   end
 
   def new
+    @info = Info.new
   end
+
 
   def edit
     @info = current_user.infos.update(info_params)

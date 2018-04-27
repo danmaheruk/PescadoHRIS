@@ -1,4 +1,4 @@
-<% provide(:title, "All Staff") %>
+<% provide(:title, "All People") %>
 
 <div class="row">
   <div class="col-md-6">
@@ -11,8 +11,9 @@
 
 
       <div class="row">
-        <div class="col-md-5">
-          <div class="well">
+        <div class="col-md-6">
+
+
             <%= will_paginate %>
           <ul class="users">
             <li>
@@ -22,12 +23,11 @@
             </li>
                 <% end %>
           </ul>
-           <%= will_paginate%>
+           <%= will_paginate %>
       </div>
     </div>
-                      <div class="col-md-7">
-                        <div class="well">
-                        chat space
-                      </div>
+
+    
+                      <div class="col-md-6">
                     </div>
-      </div>
+

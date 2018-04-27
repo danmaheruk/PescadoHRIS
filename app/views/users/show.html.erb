@@ -1,21 +1,18 @@
 <% provide(:title, @user.name) %>
 
-<div class="well">
 
+<div class="well">
   <section class="user_info">
     <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
     </h1>
+    <br>
 
-</div>
+
   </section>
 
-           
-                <% if @user.infos.any? %>
-                    <%= render @infos %>            
-              <% end %>
-
-              <%= render 'shared/info' %>
-
+           <ol>
+             <%= render 'shared/info' %>         
+           </ol>
 

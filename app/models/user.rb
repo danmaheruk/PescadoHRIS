@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :infos
+  has_many :infos, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   mount_uploader :doc, AppraisalUploader
   before_save :downcase_email
