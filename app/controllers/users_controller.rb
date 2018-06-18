@@ -11,13 +11,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     redirect_to root_url and return unless true
     @infos = @user.infos.paginate(page: params[:page])
-<<<<<<< HEAD
-    @leaves = @user.leaves.paginate(page: params[:page])
     @info = current_user.infos.build if logged_in?
-    @leave = current_user.leaves.build if logged_in?
-=======
-    @info = current_user.infos.build if logged_in?
->>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
   end
 
   def new

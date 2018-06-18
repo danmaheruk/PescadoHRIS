@@ -6,11 +6,11 @@ class InfosController < ApplicationController
     @info = current_user.infos.build(info_params)
     if @info.save
       flash[:success] = "Info Update!"
-<<<<<<< HEAD
+
       redirect_to static_pages_splash_path
-=======
+
       redirect_to root_url
->>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
+
     else
       render user
     end
@@ -31,15 +31,14 @@ class InfosController < ApplicationController
   private
 
     def info_params
-<<<<<<< HEAD
+
       params.require(:info).permit(:employeeno, :address, :contact, :nextofkin, :nationalins, :kinnumber, :ninumber, :carman, :carmodel, :licencep, :adaptions)
     end
 
-end
-=======
+
       params.require(:info).permit(:employeeno, :address, :contact, :nextofkin, :kinnumber)
     end
 
 end
 
->>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
+

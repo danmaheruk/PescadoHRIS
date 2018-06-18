@@ -1,9 +1,7 @@
 class User < ApplicationRecord
   has_many :infos, dependent: :destroy
-<<<<<<< HEAD
   has_many :leaves, dependent: :destroy
-=======
->>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
+
   attr_accessor :remember_token, :activation_token, :reset_token
   mount_uploader :doc, AppraisalUploader
   before_save :downcase_email
