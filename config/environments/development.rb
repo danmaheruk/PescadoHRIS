@@ -54,4 +54,12 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Specific to Twitter feed
+   # Show full error reports and disable caching.
+   config.consider_all_requests_local       = true
+   config.action_controller.perform_caching = true
+ 
+   # Don't care if the mailer can't send.
+   config.action_mailer.raise_delivery_errors = false
 end

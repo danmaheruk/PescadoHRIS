@@ -1,11 +1,28 @@
 <% provide(:title, @user.name) %>
 
 
-<div class="well">
+
   <section class="user_info">
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
-</section>
-</div>
+    <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+    </h1>
+    <br>
+
+  </section>
+  <div class="well">
+
+           <ol>
+             <%= render 'shared/info' %>  
+           </ol>
+
+
+    <% if @user.infos.any? %>
+      <h3>Information History, there have been <%= @user.infos.count %> updates.</h3>
+      
+        <%= render @infos %>
+      
+    </div>  
+    <% end %>
+  
+

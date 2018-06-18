@@ -2,6 +2,11 @@ class StaticPagesController < ApplicationController
   def home
   end
 
+  def splash
+  end
+
+  
+
   def help
   end
 

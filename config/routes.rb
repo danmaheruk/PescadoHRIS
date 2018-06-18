@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
 # Soft named routed paths
-  get '/help', to: 'static_pages#help'
   get '/signup', to: 'users#new'
   get '/user_path', to: 'users#show'
   post '/signup', to: 'users#create'
@@ -18,24 +17,35 @@ Rails.application.routes.draw do
   # Static routes
   get '/sessions/new'
   get '/static_pages/home'
-  get '/static_pages/help'
+  get '/static_pages/splash'
   get '/users/new'
   post '/users/create'
   get '/static_pages/thisispescado'
   get '/static_pages/processes'
   get '/static_pages/applications'
   get '/static_pages/benefits'
+  get '/static_pages/pension'
+  get '/static_pages/handbook'
   get '/users/admin'
   get '/users/admins'
   get '/users/show'
   get '/users/index'
+  get '/leaves/show'
+  get '/leaves/new'
+  post '/leaves/create'
+  get '/leave/show'
+  get '/infos/show'
 
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
 
 
  # Resources
   resources :users
+  resources :leaves, only: [:create, :destroy]
   resources :account_activations, only: [:edit]
   resources :password_resets,   only: [:new, :create, :edit, :update]
+  resources :infos,          only: [:create, :destroy]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # routes for downloads DONT TOUCH
   get '/static_pages/holidayreq'

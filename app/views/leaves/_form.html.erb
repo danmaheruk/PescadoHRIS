@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+
+<body>
+
+	<%= form_for(@leave) do |f| %>
+  <%= render 'shared/error_messages', object: @leave %>
+
+<div class="container-fluid">
+          <div class="col-md-3">
+<p>
+  <h3> New Leave Request</h3>
+  <p>
+  <%= f.label :reason, "Leave Requested" %>
+  <%= f.text_field :reason, class: 'form-control' %>
+
+  <%= f.label :startdate, "Start Date" %>
+  <%= f.date_field :startdate, class: 'form-control' %>
+
+  <%= f.label :enddate, "End Date" %>
+  <%= f.date_field :enddate, class: 'form-control' %>
+
+  <%= f.label :approved, "Confirmation" %>
+  <%= f.check_box :approved, class: 'form-control' %>
+
+  <%= f.submit "Request", class: "btn btn-warning" %>
+</div>
+</div>
+<% end %>
+
+</body>
+</html>

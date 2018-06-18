@@ -10,7 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171026155839) do
+ActiveRecord::Schema.define(version: 2018_04_26_190711) do
+
+  create_table "infos", force: :cascade do |t|
+    t.string "employeeno"
+    t.string "address"
+    t.string "phone"
+    t.string "nationalins"
+    t.string "nextofkin"
+    t.string "kinnumber"
+    t.integer "user_id"
+    t.string "ninumber"
+    t.string "carman"
+    t.string "carmodel"
+    t.string "licencep"
+    t.string "adaptions"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "created_at"], name: "index_infos_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_infos_on_user_id"
+  end
+
+  create_table "leaves", force: :cascade do |t|
+    t.string "reason"
+    t.date "startdate"
+    t.date "enddate"
+    t.boolean "approved"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -25,6 +53,7 @@ ActiveRecord::Schema.define(version: 20171026155839) do
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
+    t.string "doc"
   end
 
 end

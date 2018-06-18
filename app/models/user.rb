@@ -1,5 +1,8 @@
 class User < ApplicationRecord
+  has_many :infos, dependent: :destroy
+  has_many :leaves, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
+  mount_uploader :doc, AppraisalUploader
   before_save :downcase_email
   before_create :create_activation_digest
   validates :name, presence: true, length: { maximum: 50 }

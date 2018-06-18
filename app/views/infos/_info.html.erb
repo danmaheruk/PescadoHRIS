@@ -1,0 +1,33 @@
+<li id="info-<%= info.id %>">
+
+<ol>
+ <span class="user"><%= link_to info.user.name, info.user %></span>
+ <p>
+ <%= info.employeeno %>
+ <p>
+ <%= info.address %>
+ <p>
+ <%= info.phone %>
+ <p>
+ <%= info.nationalins %>
+ <p>
+ <%= info.nextofkin %>
+ <p>
+ <%= info.kinnumber %>
+ <p>
+ <%= info.ninumber %>
+ <p>
+ <%= info.carman %>
+ <p>
+ <%= info.carmodel %>
+ <p>
+ <%= info.licencep %>
+ <p>
+ <%= info.adaptions %>
+</ol>
+
+<p>
+  <span class="timestamp">
+    Last Updated <%= time_ago_in_words(info.created_at) %> ago.
+</p>
+
