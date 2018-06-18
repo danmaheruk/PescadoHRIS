@@ -1,5 +1,6 @@
 class LeavesController < ApplicationController
 
+<<<<<<< HEAD
 	before_action :logged_in?, only: [:create, :destroy]
 
 	def create
@@ -34,5 +35,21 @@ class LeavesController < ApplicationController
 
 	def leave_params
 		params.require(:leave).permit(:reason, :startdate, :enddate, :approved)
+=======
+	def index
+	end
+
+	def new
+	end
+
+	def create
+	end
+
+	def show
+
+	end
+
+	def destroy
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
 	end
 end

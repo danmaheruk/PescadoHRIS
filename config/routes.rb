@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   # Static routes
   get '/sessions/new'
   get '/static_pages/home'
+
+  get '/static_pages/help'
+
   get '/static_pages/splash'
   get '/users/new'
   post '/users/create'
@@ -25,16 +28,20 @@ Rails.application.routes.draw do
   get '/static_pages/applications'
   get '/static_pages/benefits'
   get '/static_pages/pension'
+
   get '/static_pages/handbook'
   get '/users/admin'
   get '/users/admins'
   get '/users/show'
   get '/users/index'
   get '/leaves/show'
+
   get '/leaves/new'
   post '/leaves/create'
   get '/leave/show'
   get '/infos/show'
+  get '/leave/show'
+
 
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
 

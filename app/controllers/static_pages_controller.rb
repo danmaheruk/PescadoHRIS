@@ -5,8 +5,11 @@ class StaticPagesController < ApplicationController
   def splash
   end
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
   def help
   end
 

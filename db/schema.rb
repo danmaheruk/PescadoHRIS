@@ -14,19 +14,32 @@ ActiveRecord::Schema.define(version: 2018_04_26_190711) do
 
   create_table "infos", force: :cascade do |t|
     t.string "employeeno"
+<<<<<<< HEAD
     t.string "address"
     t.string "phone"
     t.string "nationalins"
     t.string "nextofkin"
     t.string "kinnumber"
     t.integer "user_id"
+=======
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "address"
+    t.string "contact"
+    t.string "nextofkin"
+    t.string "kinnumber"
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
     t.string "ninumber"
     t.string "carman"
     t.string "carmodel"
     t.string "licencep"
     t.string "adaptions"
+<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
     t.index ["user_id", "created_at"], name: "index_infos_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_infos_on_user_id"
   end

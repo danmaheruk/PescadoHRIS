@@ -4,7 +4,11 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", '/static_pages/splash' %></li>
+<<<<<<< HEAD
         <li><%= link_to "Help", static_pages_processes_path %></li>
+=======
+        <li><%= link_to "Help", help_path %></li>
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
         <% if logged_in? %>
           <li><%= link_to "People", '/users/index' %></li>
           <li class="dropdown">
@@ -13,12 +17,21 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "This is Pescado", '/static_pages/thisispescado' %></li>
+<<<<<<< HEAD
               <li><%= link_to "Employee handbook", pdfjs.minimal_path(file: "/handbook.pdf"), target: :_blank %></li>
               <li><%= link_to "Product Discounts", '/static_pages/benefits' %></li>
               <li><%= link_to "Appraisals & Training", '#' %></li>
               <li><%= link_to "My HR Information", current_user %></li>
               <li><%= link_to "My People's Pension", "https://myproducts.bandce.co.uk/Account/LogOn", target: :_blank %></li>
               <li><%= link_to "Sodexo Voucher Scheme", "https://uk.childcare-vouchers.sodexo.com/User/Login?Subject=Beneficiary", target: :blank %></li>
+=======
+              <li><%= link_to "Pescado Processes", '/static_pages/processes' %></li>
+              <li><%= link_to "Pescado Benefits", '/static_pages/benefits' %></li>
+              <li><%= link_to "Appraisals & Training", '#' %></li>
+              <li><%= link_to "My HR Information", current_user %></li>
+              <li><%= link_to "My People's Pension", "https://myproducts.bandce.co.uk/Account/LogOn", target: :_blank %></li>
+              
+>>>>>>> 6178b45cc6cd325010da6b71171f035b3e6e3c6d
               <li><%= link_to "My Leave", '/leaves/show' %></li>
               <% if current_user.admin? %>
                 <li class="divider"></li>
