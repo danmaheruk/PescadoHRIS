@@ -69,7 +69,7 @@ Rails.application.configure do
   host = 'exchange.pescado.co.uk'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address    =>  'exchange.pescado.co.uk'
+    :address    =>  'exchange.pescado.co.uk',
     :port => '443',
     :authentication => :ssl,
     :user_name  =>  ENV['dmaher'],
