@@ -74,7 +74,7 @@ Rails.application.configure do
     :authentication => :ssl,
     :user_name  =>  ENV['dmaher'],
     :password => ENV['Macbookpro1!'],
-    :domain => 'internal.local'
+    :domain => 'internal.local',
     :enable_starttls_auto => true
   }
 
