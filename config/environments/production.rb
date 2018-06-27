@@ -73,8 +73,7 @@ Rails.application.configure do
     :port => '443',
     :authentication => :ssl,
     :user_name  =>  ENV['dmaher'],
-    :password => ENV['Macbookpro1!'],
-    :domain => 'internal.local',
+    :user_password => ENV['proton1!'],
     :enable_starttls_auto => true
   }
 
