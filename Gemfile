@@ -26,6 +26,7 @@ gem 'jbuilder'
 # Use ActiveModel has_secure_password
  gem 'bcrypt'
  gem 'jquery'
+ gem 'react-rails'
  gem 'jquery-rails'
  gem 'will_paginate'
  gem 'devise'
