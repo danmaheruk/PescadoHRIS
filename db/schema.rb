@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2018_04_26_190711) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "contact"
     t.string "ninumber"
     t.string "carman"
     t.string "carmodel"
