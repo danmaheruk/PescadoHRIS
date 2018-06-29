@@ -1,5 +1,8 @@
 {
   "name": "PescadoHRIS",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.7"
+  }
 }
