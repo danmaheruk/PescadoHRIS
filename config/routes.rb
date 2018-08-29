@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   post '/leaves/create'
   get '/leave/show'
   get '/infos/show'
+  get '/infos/new'
   get '/leave/show'
 
 
