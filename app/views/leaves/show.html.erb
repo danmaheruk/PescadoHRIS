@@ -6,6 +6,15 @@
 <h1>My Leave Request</h1>
 
 
+</div>
+  </section>
+
+           
+                <% if @user.leaves.any? %>
+                    <%= render @leaves %>            
+              <% end %>
+
+
 <button type="button" class="btn btn-warning"><%= link_to "New Leave Request", '/leaves/new' %></button>
 
 

@@ -24,8 +24,6 @@ class LeavesController < ApplicationController
   		@leave = current_user.leaves.update(leave_params)
   	end
 	
-	def show
-	end
 	
 	def destroy
 	end
