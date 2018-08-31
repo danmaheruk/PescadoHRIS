@@ -16,7 +16,6 @@ class InfosController < ApplicationController
     @info = Info.new
   end
 
-
   def edit
     @info = current_user.infos.update(info_params)
   end
@@ -27,7 +26,6 @@ class InfosController < ApplicationController
   private
 
     def info_params
-
       params.require(:info).permit(:employeeno, :address, :contact, :nextofkin, :nationalins, :kinnumber, :ninumber, :carman, :carmodel, :licencep, :adaptions)
     end
 

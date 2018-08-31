@@ -1,24 +1,15 @@
 
-<% provide(:title, "Leave") %>
-
-<DOCTYPE! html>
-
-<h1>My Leave Request</h1>
+<% provide(:title, "Leave Requests") %>
 
 
-</div>
-  </section>
 
-           
+<h1>My Leave Requests</h1>
+
                 <% if @user.leaves.any? %>
                     <%= render @leaves %>            
               <% end %>
 
 
-<button type="button" class="btn btn-warning"><%= link_to "New Leave Request", '/leaves/new' %></button>
-
-
-<div class="well">
-
+<%= render 'shared/leave' %>
 
  

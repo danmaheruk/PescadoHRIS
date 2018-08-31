@@ -14,6 +14,7 @@ class UsersController < ApplicationController
     @info = current_user.infos.build if logged_in?
   end
 
+
   def new
     @user = User.new
   end
