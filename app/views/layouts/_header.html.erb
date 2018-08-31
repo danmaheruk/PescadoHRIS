@@ -18,11 +18,12 @@
               <li><%= link_to "Product Discounts", '/static_pages/benefits' %></li>
               <li><%= link_to "Sodexo Voucher Scheme", "https://uk.childcare-vouchers.sodexo.com/User/Login?Subject=Beneficiary", target: :blank %></li>
               
+              <%# Bulk static functions above and logic based user functions below %>
 
                <li class="divider"></li>
               <li><%= link_to "My HR Information", current_user %></li>
               <li><%= link_to "Appraisals & Training", '#' %></li>
-              <li><%= link_to "My Leave", '/leaves/show' %></li>
+              <li><%= link_to "My Holiday", '/holidays/show' %></li>
               <% if current_user.admin? %>
                 <li class="divider"></li>
                 <li><%= link_to "Settings", edit_user_path(current_user) %></li>

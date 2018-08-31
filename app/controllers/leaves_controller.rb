@@ -10,7 +10,7 @@ class LeavesController < ApplicationController
 	    else
 	      render user
 	    end
-	  end
+	end
 
 	def new
 		@leave = Leave.new

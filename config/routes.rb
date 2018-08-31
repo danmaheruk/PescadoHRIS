@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   get '/infos/show'
   get '/infos/new'
   get '/leave/show'
+  get '/holidays/show'
 
 
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
@@ -52,7 +53,8 @@ Rails.application.routes.draw do
   resources :leaves, only: [:create, :destroy]
   resources :account_activations, only: [:edit]
   resources :password_resets,   only: [:new, :create, :edit, :update]
-  resources :infos,          only: [:create, :destroy]
+  resources :infos,  only: [:create, :destroy]
+  resources :holidays, only: [:create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # routes for downloads DONT TOUCH

@@ -5,10 +5,9 @@
 
 <h1>My Leave Requests</h1>
 
-                <% if @user.leaves.any? %>
-                    <%= render @leaves %>            
-              <% end %>
-
+<% if current_user.leaves.any? %>
+<%= render @leaves %>
+<% end %>
 
 <%= render 'shared/leave' %>
 
