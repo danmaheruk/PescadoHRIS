@@ -1,33 +1,52 @@
-<li id="info-<%= info.id %>">
+<table id="info-<%= info.id %>">
 
-<ol>
- <span class="user"><%= link_to info.user.name, info.user %></span>
- <p>
- <%= info.employeeno %>
- <p>
- <%= info.address %>
- <p>
- <%= info.phone %>
- <p>
- <%= info.nationalins %>
- <p>
- <%= info.nextofkin %>
- <p>
- <%= info.kinnumber %>
- <p>
- <%= info.ninumber %>
- <p>
- <%= info.carman %>
- <p>
- <%= info.carmodel %>
- <p>
- <%= info.licencep %>
- <p>
- <%= info.adaptions %>
-</ol>
+	<thead>
+    <tr>
+      <th>Employee No.</th>
+      <th>Address</th>
+      <th>Phone No.</th>
+      <th>National Insurance No.</th>
+      <th>Next of Kin</th>
+      <th>NOK Contact</th>
+      <th>Car Make</th>
+      <th>Car Model</th>
+      <th>Licence Plate</th>
+      <th>Work Adaptions</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
 
-<p>
-  <span class="timestamp">
-    Last Updated <%= time_ago_in_words(info.created_at) %> ago.
-</p>
+	<tbody>
+      <tr> 
+
+
+ <%= link_to info.user.name, info.user %>
+ <td>
+ <%= info.employeeno %></td>
+ <td>
+ <%= info.address %></td>
+ <td>
+ <%= info.phone %></td>
+ <td>
+ <%= info.ninumber %></td>
+ <td>
+ <%= info.nextofkin %></td>
+ <td>
+ <%= info.kinnumber %></td>
+ <td>
+ <%= info.carman %></td>
+ <td>
+ <%= info.carmodel %></td>
+ <td>
+ <%= info.licencep %></td>
+ <td>
+ <%= info.adaptions %></td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+ 
 
